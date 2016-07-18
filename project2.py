@@ -17,6 +17,12 @@ from random import randint
 from make_unique import add_unique_postfix
 
 
+# Example command:
+# 
+# python project2.py images/image1.jpg
+#
+
+
 def get_contours_at_thresh(image, threshold, blur=(65,65)):
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
     gray = cv2.GaussianBlur(gray, blur, 0)
@@ -64,7 +70,12 @@ def main(args):
         cv2.waitKey(0)
 
     # save the resulting image
-    fn = add_unique_postfix(os.path.basename(args.image.name))
+    outfile = on.path.join('output', os.path.basename(args.image.name))
+    #  create output directory if it does not exist
+    if not os.path.exists('output'):
+        os.makedirs('output')
+    # get a unique filename
+    fn = add_unique_postfix(outfile)
     print('saving to {}'.format(fn))
     cv2.imwrite(fn, im_gen)
 
