@@ -19,7 +19,7 @@ from make_unique import add_unique_postfix
 
 # Example command:
 #
-# python project2.py images/image1.jpg
+# python mkneon.py images/example-image.jpg
 #
 
 

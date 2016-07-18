@@ -11,7 +11,7 @@ Transform your pictures into a random selection of neon!
 To run the program using the eample image, invoke python and pass in the path to the image.
 
 ```
-python mkneon.py image/image1.jpg
+python mkneon.py images/example-image.jpg
 ```
 
 
