@@ -390,12 +390,16 @@
         <p class="c1 c7 subtitle" id="h.p4o02r7d4vuf">
             <span>The Neon Image Converter</span>
         </p>
+        <hr>
+        <p class="c2"><span></span></p>
         <p class="c0 title" id="h.rx94anlvgo0">
             <span></span>
         </p>
         <p class="c1 c7 c15 title" id="h.e4c2i97xwww9">
             <span>Jones, Jonathan</span>
         </p>
+        <p class="c2"><span></span></p>
+        <p class="c2"><span></span></p>
         <p class="c2 c7">
             <span class="c11">
                 <a class="c4" href="mailto:jonathan.jones@gatech.edu">jonathan.jones@gatech.edu</a>
@@ -410,7 +414,7 @@
         <p class="c2 c9">
             <span></span>
         </p>
-        <h1 class="c1" id="h.su1sqkza1iic"><span>Introduction</span></h1>
+        <h1 class="c1" id="h.su1sqkza1iic"><span>Overview</span></h1>
         <p class="c2">
             <span>This program takes in an image and transforms it into an abstract neon image according to the image&rsquo;s contours. The resulting image will be different for 2 consecuitive runs with the program since many random numbers are used in generating
                 the final output.</span>
@@ -418,6 +422,7 @@
         <p class="c2 c9">
             <span></span>
         </p>
+        <h1 class="c1" id="h.su1sqkza1iic"><span>Input</span></h1>
         <p class="c2">
             <span>After running the program with the provided example image, you will get a result that is similar to the one below (but not exactly the same).</span>
         </p>
@@ -425,10 +430,11 @@
             <span></span>
         </p>
         <p class="c2 c7">
-            <span style="overflow: hidden; display: inline-block; margin: 0.00px -0.00px; border: 1.33px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 672.00px; height: 448.00px;"><img alt="image1.jpg" src="images/image01.jpg" style="width: 672.00px; height: 448.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span>
+            <span style="overflow: hidden; display: inline-block; margin: 0.00px -0.00px; border: 1.33px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 672.00px; height: 448.00px;"><img alt="image1.jpg" src="images/image00.jpg" style="width: 672.00px; height: 448.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span>
         </p>
+        <h1 class="c1" id="h.su1sqkza1iic"><span>Output</span></h1>
         <p class="c2 c7">
-            <span style="overflow: hidden; display: inline-block; margin: 0.00px -0.00px; border: 1.33px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 672.00px; height: 448.00px;"><img alt="image1_009.jpg" src="images/image00.jpg" style="width: 672.00px; height: 448.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span>
+            <span style="overflow: hidden; display: inline-block; margin: 0.00px -0.00px; border: 1.33px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 672.00px; height: 448.00px;"><img alt="image1_009.jpg" src="images/image01.jpg" style="width: 672.00px; height: 448.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span>
         </p>
         <p class="c2 c9">
             <span></span>
@@ -436,13 +442,13 @@
         <p class="c2">
             <span>The source code for this program is also hosted on </span>
             <span class="c11">
-                <a class="c4" href="https://www.google.com/url?q=https://github.com/&amp;sa=D&amp;ust=1468837176146000&amp;usg=AFQjCNFSx8LUMMwDNR33G_BB8Q5qN70zwA">GitHub</a>
+                <a class="c4" href="https://github.com/jjones646">GitHub</a>
             </span>
             <span>&nbsp;at the following link:</span>
         </p>
         <p class="c2">
             <span class="c11">
-                <a class="c4" href="https://www.google.com/url?q=https://github.com/jjones646/mkneon&amp;sa=D&amp;ust=1468837176146000&amp;usg=AFQjCNE1t1wlpWloZlhXweqf0odluQQJpw">https://github.com/jjones646/mkneon</a>
+                <a class="c4" href="https://github.com/jjones646/mkneon">https://github.com/jjones646/mkneon</a>
             </span>
         </p>
         <p class="c2 c9">
@@ -460,7 +466,7 @@
                 <span>Clean up thresholded image with erode &amp; dilate</span>
             </li>
             <li class="c2 c6">
-                <span>Use OpenCV&rsquo;s findContours API</span>
+                <span>Use OpenCV&rsquo;s findContours() API</span>
             </li>
             <li class="c2 c6">
                 <span>Iterate over each set of contours &amp; apply a random stroke width and a random color</span>
@@ -471,35 +477,12 @@
         </p>
         <h1 class="c1" id="h.popzgyg0gvkx"><span>Credits</span></h1>
         <p class="c2">
-            <span>The core contour extraction part of the program was heavily based on this tutorial:</span>
+            <span>Extracting the contour lines out of an image is heavily based on snippets of code from Adrian Rosebrock’s blog post that can be found here:</span>
         </p>
         <p class="c2">
             <span class="c11">
-                <a class="c4" href="https://www.google.com/url?q=http://www.pyimagesearch.com/2015/03/30/accessing-the-raspberry-pi-camera-with-opencv-and-python/&amp;sa=D&amp;ust=1468837176149000&amp;usg=AFQjCNG3UxcT2wz3w-UWzWEO7zHtr5LW1A">http://www.pyimagesearch.com/2015/03/30/accessing-the-raspberry-pi-camera-with-opencv-and-python/</a>
+                <a class="c4" href="http://www.pyimagesearch.com/2016/04/11/finding-extreme-points-in-contours-with-opencv">http://www.pyimagesearch.com/2016/04/11/finding-extreme-points-in-contours-with-opencv</a>
             </span>
-        </p>
-        <p class="c2 c9">
-            <span></span>
-        </p>
-        <h1 class="c1 c14" id="h.6rav5uhn6glf"><span></span></h1>
-        <h1 class="c1" id="h.9tdsaaw9m43l"><span>Artistic/Technical Emphasis</span></h1>
-        <p class="c2">
-            <span class="c3">Artistic:</span>
-            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;35%</span>
-        </p>
-        <p class="c2">
-            <span class="c3">Technical:</span>
-            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;15%</span>
-        </p>
-        <p class="c2 c9">
-            <span></span>
-        </p>
-        <p class="c2">
-            <span>While this project contains some technical details about how the output image is generated, most of the technical details in doing so is just a few OpenCV calls. The creative part of this program is how it uses the contour data to construct
-                a neon-type image. For this reason, I base most of the credit on the artistic side.</span>
-        </p>
-        <p class="c2 c9">
-            <span></span>
         </p>
         <div>
             <p class="c2 c8">
