@@ -1,3 +1,2 @@
 *.pyc
-images/output
-*.jpg
+output/

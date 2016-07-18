@@ -3,6 +3,9 @@
 Transform your pictures into a random selection of neon!
 
 
+![Neon collage generated from the same base image](./images/example-outputs.jpg)
+
+
 ## Running the Example
 
 To run the program using the eample image, invoke python and pass in the path to the image.

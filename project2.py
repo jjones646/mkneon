@@ -18,7 +18,7 @@ from make_unique import add_unique_postfix
 
 
 # Example command:
-# 
+#
 # python project2.py images/image1.jpg
 #
 
@@ -70,7 +70,7 @@ def main(args):
         cv2.waitKey(0)
 
     # save the resulting image
-    outfile = on.path.join('output', os.path.basename(args.image.name))
+    outfile = os.path.join('output', os.path.basename(args.image.name))
     #  create output directory if it does not exist
     if not os.path.exists('output'):
         os.makedirs('output')
